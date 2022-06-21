@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gym Sign Up</title>
+    <link href="Styles.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="somepage.html" method="get">
+            <label for="title">Title *</label>
+            <select name="title" id="title">
+                <option value="" disabled selected>--select--</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Mx">Mx</option>
+            </select>
+            <!-- This is a Post method-->
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName">
+            <label for="Surname">Surname</label>
+            <input type="text" name="Surname" id="Surname">
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob" name="dob">
+
+            <label>Membership Plans *</label>
+
+            <div class="radio-container">
+
+                <input type="radio" id="full" value="full" name="membership">
+                <label class="radio-label" for="full" >Full access</label>
+
+                <input type="radio" id="op" name="op" name="membership">
+                <label class="radio-label" for="op">Off peak</label>
+
+                <input type="radio" id="allg" name="allg" name="membership">
+                <label class="radio-label" for="allg">All Gyms</label>
+                
+            </div>
+            <label for="acceptedTandC">I accept the
+                <a href="tandc.html" target="_blank">terms and conditions</a>
+            </label>
+            <input type="checkbox" name="acceptedTandC" value="acceptedTandC">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
