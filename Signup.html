@@ -45,8 +45,18 @@
             <label for="acceptedTandC">I accept the
                 <a href="tandc.html" target="_blank">terms and conditions</a>
             </label>
-            <input type="checkbox" name="acceptedTandC" value="acceptedTandC">
-            <button type="submit">Submit</button>
+            <input type="checkbox" name="acceptedTandC" id="acceptedTandC" value="yes">
+            <script>
+                const onSubmit = () => {
+                    let firstNameInput = document.getElementById("firstName");
+                    console.log("first name input is", firstNameInput);
+                    firstNameInput.value = "Simon";
+
+                    let labels = document.getElementsByClassName("radio-label");
+                        console.log(labels);
+                }
+            </script>
+            <button onclick="onSubmit();" type="submit">Submit</button>
         </form>
     </div>
 
